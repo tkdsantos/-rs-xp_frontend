@@ -2,12 +2,12 @@
   "user": [
     {
       "id": 1,
-      "name": "Carlos",
+      "name": "Carlos Roberto",
       "email": "carlos@carlos.com",
       "password": "123456",
-      "master": false,
+      "master": true,
       "school": "E E Celso Abbade Mourão",
-      "avatar": "",
+      "avatar": "https://www.google.com/search?q=avatar+perfil&sxsrf=ACYBGNTZI1zvewbIeK35JUtzUjg13Xr_sA:1574796650909&tbm=isch&source=iu&ictx=1&fir=GMuus4m5xBr62M%253A%252C6dr0r1EUqlvnOM%252C_&vet=1&usg=AI4_-kSYPy5pqcWKBP5prHznHZsttunVOA&sa=X&ved=2ahUKEwjB6uHXzojmAhV_HbkGHXUgBMQQ9QEwAXoECAYQBg#imgrc=GMuus4m5xBr62M:",
       "data_nasc": "20/11/2004"
     }
   ],
