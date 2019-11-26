@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import api from "../../services/api";
-import { Container, Title, List } from "./styles";
+import { Container, List, Status, BlocoStatus, BlocoButton } from "./styles";
 
 function Browse() {
   const [user, setUser] = useState([]);
@@ -18,15 +18,23 @@ function Browse() {
   return (
     <Container>
       <List>
-        {user.map(
-          item =>
-            item.master && (
-              <>
-                <Title>{item.name}</Title>
-                <p>{item.email}</p>
-              </>
-            )
-        )}
+        <BlocoStatus>
+          {user.map(
+            item =>
+              item.master && (
+                <>
+                  <img src={item.avatar} />
+                  <Status>
+                    <h1>{item.name}</h1>
+                    <p>{item.email}</p>
+                  </Status>
+                </>
+              )
+          )}
+        </BlocoStatus>
+        <BlocoButton>
+          <button>Solicitar</button>
+        </BlocoButton>
       </List>
     </Container>
   );
