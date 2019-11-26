@@ -1,7 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-
-// import { Spinner } from "../../components/Loading/styles";
 
 export const Container = styled.div`
   flex: 1;
@@ -14,7 +11,7 @@ export const Container = styled.div`
 
 export const List = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: #f6f6f6;
   margin-left: 20px;
   width: 70%;
@@ -22,6 +19,7 @@ export const List = styled.div`
   border-radius: 20px;
   text-decoration: none;
   padding: 30px;
+  margin-bottom: 20px;
 
   img {
     height: 60px;
@@ -47,9 +45,34 @@ export const Status = styled.div`
     line-height: 15px;
     font-size: 17px;
     color: #999;
-    margin-left: 10px;
   }
 `;
 
-export const BlocoStatus = styled.div``;
-export const BlocoButton = styled.div``;
+export const BlocoGeral = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+`;
+export const BlocoStatus = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const BlocoButton = styled.div`
+  button {
+    border: 0;
+    background: #1db854;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  button:hover {
+    background: #1db879;
+  }
+`;
