@@ -1,14 +1,17 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
 import Header from "../header";
-import Browse from "../browse";
+import Routes from "../../routes";
 // import { Container } from './styles';
 
 export default function home() {
   return (
     <>
-      <Header />
-      <Browse />
+      <BrowserRouter>
+        <Header />
+        <Routes />
+      </BrowserRouter>
     </>
   );
 }

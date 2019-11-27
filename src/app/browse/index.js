@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import api from "../../services/api";
 import {
@@ -39,7 +40,9 @@ function Browse() {
                     </Status>
                   </BlocoStatus>
                   <BlocoButton>
-                    <button>Solicitar Mentoria</button>
+                    <Link to={`/call/${item.id}`}>
+                      <button>Solicitar Mentoria</button>
+                    </Link>
                   </BlocoButton>
                 </BlocoGeral>
               </List>
