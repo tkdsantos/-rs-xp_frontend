@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import { Container, Empresa, Menu, Usuario, Status } from "./styles";
 
 import Logo from "../../assets/bonsai.svg";
@@ -13,10 +13,18 @@ export default function header() {
       </Empresa>
       <Menu>
         <ul>
-          <li>Home</li>
-          <li>Curso</li>
-          <li>Mentor</li>
-          <li>Contato</li>
+          <Link to="/">
+            <li>Home</li>
+          </Link>
+          <Link>
+            <li>Curso</li>
+          </Link>
+          <Link to="/call/:id">
+            <li>Mentor</li>
+          </Link>
+          <Link>
+            <li>Contato</li>
+          </Link>
         </ul>
       </Menu>
       <Usuario>
