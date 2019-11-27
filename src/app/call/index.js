@@ -1,9 +1,12 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import {
   Container,
   Bloc,
   Header,
+  StatusBar,
+  StatusImg,
+  StatusButton,
   Status,
   Content,
   Footer,
@@ -15,14 +18,23 @@ export default function call() {
     <Container>
       <Bloc>
         <Header>
-          <img
-            src="https://abrilexame.files.wordpress.com/2018/10/8dicas1.jpg"
-            alt=""
-          />
-          <Status>
-            <strong>Carlos Alberto</strong>
-            <span>carlos@carlos.com</span>
-          </Status>
+          <StatusBar>
+            <StatusImg>
+              <img
+                src="https://abrilexame.files.wordpress.com/2018/10/8dicas1.jpg"
+                alt=""
+              />
+              <Status>
+                <strong>Carlos Alberto</strong>
+                <span>carlos@carlos.com</span>
+              </Status>
+            </StatusImg>
+            <StatusButton>
+              <Link to="/live">
+                <button>Live</button>
+              </Link>
+            </StatusButton>
+          </StatusBar>
         </Header>
         <Content>
           <p>

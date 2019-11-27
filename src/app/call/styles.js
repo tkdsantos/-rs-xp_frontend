@@ -14,8 +14,6 @@ export const Bloc = styled.div`
   padding: 20px;
 `;
 export const Header = styled.div`
-  display: flex;
-  align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
@@ -24,6 +22,32 @@ export const Header = styled.div`
     height: 100px;
     border-radius: 100%;
     border: 2px solid #fff;
+  }
+`;
+
+export const StatusBar = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+export const StatusImg = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const StatusButton = styled.div`
+  button {
+    border: 0;
+    font-size: 20px;
+    padding: 5px 10px;
+    background: #228b22;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+  }
+  button:hover {
+    background: #77dd55;
   }
 `;
 
