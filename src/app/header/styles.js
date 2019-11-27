@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 0 80px;
-  background: linear-gradient(0deg, #00254f, #0058bd);
+  background: linear-gradient(80deg, #00254f, #3b5998);
   width: 100%;
   height: 60px;
   display: flex;
@@ -21,6 +21,7 @@ export const Empresa = styled.div`
     width: 50px;
     margin-right: 10px;
     fill: #94d31b;
+    color: #fff;
   }
 
   strong {
