@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 0 80px;
-  background: #263a4d;
+  background: linear-gradient(0deg, #00254f, #0058bd);
   width: 100%;
   height: 60px;
   display: flex;
@@ -19,11 +19,14 @@ export const Empresa = styled.div`
   img {
     height: 50px;
     width: 50px;
-    margin-right: 20px;
+    margin-right: 10px;
+    fill: #94d31b;
   }
 
   strong {
     color: #fff;
+    font: 22px Montserrat, sans-serif;
+    font-weight: bold;
   }
 `;
 export const Menu = styled.div`

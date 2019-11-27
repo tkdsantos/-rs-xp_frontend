@@ -2,14 +2,14 @@ import React from "react";
 
 import { Container, Empresa, Menu, Usuario, Status } from "./styles";
 
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/bonsai.svg";
 
 export default function header() {
   return (
     <Container>
       <Empresa>
         <img src={Logo} />
-        <strong>Miagle</strong>
+        <strong>MIAGLER</strong>
       </Empresa>
       <Menu>
         <ul>

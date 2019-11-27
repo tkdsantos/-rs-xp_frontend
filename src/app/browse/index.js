@@ -24,27 +24,28 @@ function Browse() {
 
   return (
     <Container>
-      <List>
-        {user.map(
-          item =>
-            item.master && (
-              <>
+      {user.map(
+        item =>
+          item.master && (
+            <>
+              <List>
                 <BlocoGeral>
                   <BlocoStatus>
-                    <img src={item.avatar} />
+                    <img src={item.avatar} alt="avatar" />
                     <Status>
                       <h1>{item.name}</h1>
                       <p>{item.email}</p>
+                      <span>{item.bio}</span>
                     </Status>
                   </BlocoStatus>
                   <BlocoButton>
-                    <button>Solicitar</button>
+                    <button>Solicitar Mentoria</button>
                   </BlocoButton>
                 </BlocoGeral>
-              </>
-            )
-        )}
-      </List>
+              </List>
+            </>
+          )
+      )}
     </Container>
   );
 }

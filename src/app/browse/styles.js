@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { darken } from "polished";
 
 export const Container = styled.div`
   flex: 1;
@@ -12,18 +13,18 @@ export const Container = styled.div`
 export const List = styled.div`
   display: flex;
   flex-direction: column;
-  background: #f6f6f6;
-  margin-left: 20px;
-  width: 70%;
-  min-height: 200px;
-  border-radius: 20px;
+  background: linear-gradient(0deg, #a2c4eb, #ffffff, #ffffff);
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  width: 60%;
+  min-height: 160px;
+  border-radius: 15px;
   text-decoration: none;
   padding: 30px;
-  margin-bottom: 20px;
 
   img {
-    height: 60px;
-    width: 60px;
+    height: 130px;
+    width: 130px;
     margin-right: 20px;
     border-radius: 100%;
 
@@ -37,42 +38,52 @@ export const List = styled.div`
   }
 `;
 export const Status = styled.div`
+  padding: 0 15px 0 0;
   h1 {
     font-size: 25px;
-    color: #666;
+    color: #444;
   }
   p {
     line-height: 15px;
     font-size: 17px;
     color: #999;
+    margin-bottom: 15px;
+  }
+
+  span {
+    line-height: 15px;
+    font-size: 14px;
+    color: #667;
   }
 `;
 
 export const BlocoGeral = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+  padding-bottom: 0px;
 `;
+
 export const BlocoStatus = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
 `;
+
 export const BlocoButton = styled.div`
   button {
     border: 0;
     background: #1db854;
     color: #fff;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 10px 30px;
+    border-radius: 12px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.2s;
   }
 
   button:hover {
-    background: #1db879;
+    background: ${darken(0.1, "#1db854")};
   }
 `;
